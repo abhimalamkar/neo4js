@@ -1,8 +1,9 @@
 version: "3"
 
 services:
-  neo4j: 
+  database: 
     image: neo4j:latest
+    restart: always
     ports:
       - '7474:7474'
       - '7473:7473'
@@ -22,4 +23,4 @@ services:
       - NEO4J_apoc_import_file_use__neo4j__config=true
 
 volumes:
-  neo4j:
+  database:
