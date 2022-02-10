@@ -18,9 +18,9 @@ services:
       - NEO4J_AUTH=neo4j/test
       - NEO4JLABS_PLUGINS=["graph-data-science", "apoc"]
       - NEO4J_dbms_security_procedures_allowlist=gds.*, apoc.*
-      - NEO4J_apoc_export_file_enabled=true
-      - NEO4J_apoc_import_file_enabled=true
-      - NEO4J_apoc_import_file_use__neo4j__config=true
+      # - NEO4J_apoc_export_file_enabled=true
+      # - NEO4J_apoc_import_file_enabled=true
+      # - NEO4J_apoc_import_file_use__neo4j__config=true
 
 volumes:
   database:
